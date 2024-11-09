@@ -35,7 +35,7 @@ export const Login = () => {
 
     // Obtener la información retornada por la request
     const data = await request.json();
-
+    console.log(data);
     if (data.status == "success") {
       // Guardar los datos del token y usuario en el localstorage del navegador
       localStorage.setItem("token", data.token);
